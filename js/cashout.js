@@ -1,11 +1,3 @@
-// const btn = document.getElementById('btn1')
-// const inpPin = document.getElementById('inpPin1')
-// const inpAmount = document.getElementById('inpAmount1')
-// const curAmount = document.getElementById('curAmount')
-// console.log(curAmount.innerText)
-// console.log(btn, inpPin , inpAmount)
-
-
 document.getElementById('btn1').addEventListener('click',function(event){
     event.preventDefault()
 
@@ -28,9 +20,5 @@ document.getElementById('btn1').addEventListener('click',function(event){
     else{
         alert("Invalid")
     }
-
-
-
-
 
 })

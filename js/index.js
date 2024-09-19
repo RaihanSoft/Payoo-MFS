@@ -1,10 +1,5 @@
-// const btn = document.getElementById('btn')
-// const inpNumber = document.getElementById('inpNumber')
-// const inpPin = document.getElementById('inpPin')
-
 document.getElementById('btn').addEventListener('click',function(event){
     event.preventDefault()
-
 
     const inpNumber = document.getElementById('inpNumber').value
     console.log("Number",inpNumber)
