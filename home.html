@@ -20,9 +20,9 @@
                 <div class="artboard artboard-demo phone-1">
                     <!-- !here  -->
 
-                    <div class="flex gap-10 ">
+                    <div class="flex mt-5 gap-10 ">
                         <div>
-                            <p class="text-start text-4xl text-white font-bold">$4600</p>
+                            <p class="text-start text-4xl text-white font-bold">$ <span id="curAmount">4500</span> </p>
                             <p class="text-xl font-medium">Available Balance</p>
                         </div>
 
@@ -34,9 +34,8 @@
                    <!-- ! welcome  -->
 
 
-                   <div class="text-start px-3 mt-5 ">
+                   <div class="text-start px-3 mt-2 ">
                     <p class="text-xl text-white font-bold" >🔥 Welcome to Payooo!</p>
-                    Enjoy easy and convenient financial services with us. Cashout charge is low and 
                    </div>
 
                    <!-- ! money  -->
@@ -45,13 +44,13 @@
 
                     <!-- one -->
 
-                    <div class=" shadow-lg cursor-pointer hover:shadow-slate-100 flex items-center justify-center flex-col mt-5 rounded-xl">
+                    <div id="addMoney" class=" shadow-lg cursor-pointer hover:shadow-slate-100 flex items-center justify-center flex-col mt-5 rounded-xl">
                         <i class="ri-money-rupee-circle-line text-3xl text-yellow-300"></i>
-                        <p class="font-bold text-white">Add Money</p>
+                        <p  class="font-bold text-white">Add Money</p>
                     </div>                    
                     <!-- one -->
 
-                    <div class="shadow-lg cursor-pointer hover:shadow-slate-100  flex items-center justify-center flex-col  mt-5 rounded-xl">
+                    <div id="cashout" class="shadow-lg cursor-pointer hover:shadow-slate-100  flex items-center justify-center flex-col  mt-5 rounded-xl">
                         <i class="ri-money-rupee-circle-line text-3xl text-yellow-300"></i>
                         <p class="font-bold text-white">Cashout</p>
                     </div>                    
@@ -87,15 +86,82 @@
                    </div>
 
 
+                                       <!-- ! inp add  -->
+                                       <div id="inpAdd" class="flex hidden flex-col justify-center items-center space-y-3 p-5  bg-white rounded-2xl px-10">
+                                        <div>
+                                            <p class="font-bold text-start text-white">Mobile Number</p>
+                                            <input id="inpAmount" type="text" placeholder="Enter your number"
+                                                class="input input-bordered input-secondary w-full max-w-xs" />
+                
+                                        </div>
+                                        <!-- second input  -->
+                                        <div>
+                                            <p class="font-bold text-start text-white">4 Digit Pin</p>
+                                            <input id="inpPin" type="text" placeholder="Enter 4 Digit Pin"
+                                                class="input input-bordered input-secondary w-full max-w-xs" />
+                
+                                        </div>
+                
+                                        <div>
+                                            <button id="btn" class="btn btn-success text-white px-20 rounded-full">Add Money</button>
+                                        </div>
+                
+                                    </div>
+
+                                    <!-- ! inp two  -->
+
+
+
+                                       <!-- ! inp cashout  -->
+                                       <div id="inptCash" class=" hidden flex flex-col justify-center items-center space-y-3 p-5  bg-white rounded-2xl px-10">
+                                        <div>
+                                            <p class="font-bold text-start text-white">Mobile Number</p>
+                                            <input id="inpAmount1" type="text" placeholder="Enter your number"
+                                                class="input input-bordered input-secondary w-full max-w-xs" />
+                
+                                        </div>
+                                        <!-- second input  -->
+                                        <div>
+                                            <p class="font-bold text-start text-white">4 Digit Pin</p>
+                                            <input id="inpPin1" type="text" placeholder="Enter 4 Digit Pin"
+                                                class="input input-bordered input-secondary w-full max-w-xs" />
+                
+                                        </div>
+                
+                                        <div>
+                                            <button id="btn1" class="btn btn-error text-white px-20 rounded-full">CashOut</button>
+                                        </div>
+                
+                                    </div>
+
+                                    <!-- ! inp two  -->
+
+
 
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
     </main>
 
 
 
     <script src="js/home.js"></script>
+    <script src="js/cashout.js"></script>
+    <script src="js/validation.js"></script>
     
 </body>
 </html>
